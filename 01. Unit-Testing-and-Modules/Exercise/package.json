@@ -1,0 +1,12 @@
+{
+  "name": "mocha-tests",
+  "version": "1.0.0",
+  "description": "a practice environment for running mocha and chai tests",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1"
+  }
+}

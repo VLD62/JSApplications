@@ -1,0 +1,8 @@
+{
+    "name": "mocha-tests",
+    "version": "1.0.0",
+    "description": "a practice environment for running mocha and chai tests",
+    "scripts": {
+      "test": "mocha"
+    }
+  }
