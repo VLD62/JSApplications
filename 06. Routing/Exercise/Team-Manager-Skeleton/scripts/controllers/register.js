@@ -6,7 +6,7 @@ export default async function (){
         footer: await this.load('./templates/common/footer.hbs'),
         registerForm: await this.load('./templates/register/registerForm.hbs')
     };
-    this.partial('./templates/register/registerPage.hbs', {loggedIn: false});
+    this.partial('./templates/register/registerPage.hbs');
 }
 
 export async function registerPost(){
@@ -21,7 +21,7 @@ export async function registerPost(){
             Object.assign(error, result);
             throw error;
         }
-        this.redirect('#/home');
+        this.redirect('#/login');
     } catch (err) {
         console.error(err);
         alert(err.message)

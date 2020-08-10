@@ -1,0 +1,18 @@
+<header>
+    <div class="kozabonbon">
+        <h1>Team Koza kindly Hello!!!</h1>
+
+        <nav>
+            <a href="#/home" class="btn btn-default">Home</a>
+            <a href="#/second" class="btn btn-default">Second</a>
+            <a href="#/getData" class="btn btn-default">Get Data</a>
+            {{#if loggedIn}}
+                <a href="#/logout" class="btn btn-default">Logout</a>
+            {{else}}
+                <a href="#/createUser" class="btn btn-default">Create User</a>
+                <a href="#/login" class="btn btn-default">Login</a>
+            {{/if}}
+
+        </nav>
+    </div>
+</header>

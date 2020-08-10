@@ -1,0 +1,16 @@
+<div class="container">
+    {{> header}}
+    <h1>Get Data from database!!</h1>
+
+    <h1>Books</h1>
+    <div>
+        {{#each books}}
+            <div>
+            <p>Title : {{title}}, Author: {{author}}, Isbn: {{Isbn}}</p>
+            </div>
+        {{/each}}
+    </div>
+
+
+</div>
+{{> footer}}

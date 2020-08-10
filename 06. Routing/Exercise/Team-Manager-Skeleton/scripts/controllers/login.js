@@ -18,13 +18,14 @@ export async function loginPost(){
             Object.assign(error, result);
             throw error;
         }
-
+        
         this.app.userData.loggedIn = true;
         this.app.userData.username = result.username;
         this.app.userData.userId = result.objectId;
         localStorage.setItem('userToken', result['user-token']);
         localStorage.setItem('username', result.username);
         localStorage.setItem('userId', result.objectId);
+        console.log(this.app.userData.loggedIn);
         this.redirect('#/home');
     } catch (err) {
         console.error(err);

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .test {
+        color: red;
+    }
+    </style>
+</head>
+
+<body>
+    <app-root test="123" title="My Title" value="My Value">
+        <h1 slot='header'>My custom header</h1>
+        <span class="test">Hello from web Component!</span>
+        <h4 slot='footer'>My custom footer</h1>
+    </app-root>
+    <template>
+        <div></div>
+        <h1>TEST</h1>
+    </template>
+    <script src="./index.js" type="module"></script>
+</body>
+
+</html>

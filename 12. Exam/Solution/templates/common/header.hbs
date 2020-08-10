@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <a class="navbar-brand text-light" href="#/home">Movies</a>
+    <ul class="navbar-nav ml-auto ">
+    {{#if isAuth}}
+        <li class="nav-item">
+            <a class="nav-link">Welcome, {{ user }}</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#/logout">Logout</a>
+        </li>
+    {{else }}
+        <li class="nav-item">
+            <a class="nav-link" href="#/login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#/register">Register</a>
+        </li>
+    {{/if}}
+    </ul>
+</nav>
+
+<section class="notifications" style="display: none;">
+    <p class="notification-message" id="errorBox">Message...</p>
+</section>
+<section class="notifications" style="display: none;background-color:rgba(1, 131, 29, 0.541);">
+    <p class="notification-message" id="successBox">Message...</p>
+</section>

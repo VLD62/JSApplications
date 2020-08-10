@@ -1,3 +1,5 @@
+/* globals $, Sammy */
+
 import home from './controllers/home.js'
 import about from './controllers/about.js'
 import register , { registerPost } from './controllers/register.js'
@@ -37,10 +39,6 @@ window.addEventListener('load', () => {
         this.post('#/register', (ctx) => { registerPost.call(ctx); });
         this.post('#/login', (ctx) => { loginPost.call(ctx); });
         this.post('#/create', (ctx) => { createPost.call(ctx); });
-        //Store view controllers
-        //Save user session
-        //Init session of controllers
     });
-
     app.run();
 });

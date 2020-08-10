@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/sammy/lib/min/sammy-0.7.6.min.js"></script>
+    <title>Sammy Test</title>
+</head>
+
+<body>
+    <nav id="nav">
+    <ul>
+        <li><a href="#/main">Main</a></li>
+        <li><a href="#/bigletters">Big Letters</a></li>
+        <li><a href="#/parseme/drafts">Parse Path</a></li>
+        <li><a href="#/parseme/id=123&name=john">Get my params</a></li>
+        <li><a href="#/compose">compose</a></li>
+        <li><a href="#/by_name/this">Alert this</a></li>
+        <li><a href="#/by_name/this/and/that">Alert This and that</a></li>
+    </ul>
+</nav>
+    <div id="content"></div>
+    <script src="./index.js" type="module">
+    // our app goes here
+    </script>
+</body>
+
+</html>

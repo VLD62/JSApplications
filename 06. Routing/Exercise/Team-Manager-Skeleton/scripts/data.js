@@ -51,7 +51,7 @@ export async function logout(username, password){
     });
 }
 
-async function setUserTeamId(userId) {
+async function setUserTeamId(userId, teamId) {
     const token = localStorage.getItem('userToken')
 
     if (!token) {
